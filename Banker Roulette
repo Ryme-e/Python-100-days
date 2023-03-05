@@ -1,0 +1,10 @@
+# Import the random module
+import random
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+range = len(names) - 1 
+draw = random.randint(0, range)
+winner = names[draw]
+print(f"{winner} is going to buy the meal today!")
